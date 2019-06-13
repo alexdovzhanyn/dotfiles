@@ -14,6 +14,8 @@ create_new_branch_off_master() {
   git checkout -b $1 origin/master
 }
 
+# Git add, commit, and push all changes to current branch.
+# Usage: gacpb your commit message here
 gacpb() {
   gaa
   gc -m "$*"
