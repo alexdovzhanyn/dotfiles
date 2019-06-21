@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 # Define shape of shell name
-PS1='\e[34manon@paxos:\e[0m\W \e[32m$(parse_git_branch)\e[0m ⇨ '
+PS1='\e[34manon@paxos:\e[0m\W \e[32m$(parse_git_branch)\e[0m \[⇨\]'
 
 # Useful functions
 
