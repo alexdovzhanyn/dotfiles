@@ -24,6 +24,11 @@ if ! [ -x "$(command -v git)" ]; then
   brew install git
 fi
 
+# Install n, node version manager
+if ! [ -x "$(command -v n)" ]; then
+  notify "Installing N"
+  brew install n
+fi
 
 # Set up directory structure for Pathogen
 notify "Installing Pathogen"
@@ -37,5 +42,13 @@ curl --silent https://raw.githubusercontent.com/alexdovzhanyn/dotfiles/master/.v
 # Configure vim color scheme
 cd ~/.vim && git init && git submodule add git@github.com:dracula/vim.git bundle/dracula-theme && cd -
 
-
 install_vim_plugins
+
+# Remind self to download important applications
+echo "\n\nRemember to download:"
+echo "Atom Text Editor: https://atom.io/"
+echo "ITerm2: https://www.iterm2.com/"
+echo "Postman: https://www.getpostman.com/"
+echo "Slack: https://slack.com/downloads/mac"
+echo "Telegram: https://desktop.telegram.org/"
+echo "Spotify: https://www.spotify.com/us/"
