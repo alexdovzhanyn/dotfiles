@@ -1,0 +1,7 @@
+[includeIf "gitdir:~/projects/"]
+	path = ~/git-professional.conf
+[includeIf "gitdir:~/personal/"]
+	path = ~/git-personal.conf
+
+[pull]
+	rebase = false
