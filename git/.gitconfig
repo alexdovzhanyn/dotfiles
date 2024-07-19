@@ -1,7 +1,14 @@
 [includeIf "gitdir:~/projects/"]
-	path = ~/git-professional.conf
+        path = ~/git-professional.conf
 [includeIf "gitdir:~/personal/"]
-	path = ~/git-personal.conf
-
+        path = ~/git-personal.conf
+[includeIf "gitdir:~/.config/"]
+        path = ~/git-personal.conf
 [pull]
-	rebase = false
+        rebase = false
+[rerere]
+        enabled = true
+[column]
+        ui = auto
+[branch]
+        sort = -committerdate
